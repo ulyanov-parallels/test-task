@@ -3,7 +3,7 @@ Parallels_Test_Task  README
 
 **********************************************************************
 
-ДОПУЩЕНИЯ:
+Р”РћРџРЈР©Р•РќРРЇ:
 
 Windows7 Ultimate 64-bit
 
@@ -17,31 +17,31 @@ Internet Explorer Driver Server 32-bit (IEDriverServer.exe)
 chromedriver 2.10 win32   (chromedriver.exe)
 
 
-ИНСТРУКЦИЯ:
+РРќРЎРўР РЈРљР¦РРЇ:
 
-Добавить путь к папке с IEDriverServer.exe, chromedriver.exe (Например, C:\drivers) в Windows System Variable $PATH. Перезапустить Eclipse, если запущен.
-Скопировать папку с исходниками Parallels_Test_Task в Eclipse workspace.
-В Eclipse создать new JavaProject с именем Parallels_Test_Task.
-В Project Properties > Java Build Path  > Add Library добавить TestNG.
-В Project Properties > Java Build Path > Add External JARs добавить Selenium JARs (Selenium Java Client Driver 2.43.1 из корневой папки и из libs).
-Запустить Main.java : Run > as Java Application (Можно остановить выполнение зразу после запуска).
+Р”РѕР±Р°РІРёС‚СЊ РїСѓС‚СЊ Рє РїР°РїРєРµ СЃ IEDriverServer.exe, chromedriver.exe (РќР°РїСЂРёРјРµСЂ, C:\drivers) РІ Windows System Variable $PATH. РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚СЊ Eclipse, РµСЃР»Рё Р·Р°РїСѓС‰РµРЅ.
+РЎРєРѕРїРёСЂРѕРІР°С‚СЊ РїР°РїРєСѓ СЃ РёСЃС…РѕРґРЅРёРєР°РјРё Parallels_Test_Task РІ Eclipse workspace.
+Р’ Eclipse СЃРѕР·РґР°С‚СЊ new JavaProject СЃ РёРјРµРЅРµРј Parallels_Test_Task.
+Р’ Project Properties > Java Build Path  > Add Library РґРѕР±Р°РІРёС‚СЊ TestNG.
+Р’ Project Properties > Java Build Path > Add External JARs РґРѕР±Р°РІРёС‚СЊ Selenium JARs (Selenium Java Client Driver 2.43.1 РёР· РєРѕСЂРЅРµРІРѕР№ РїР°РїРєРё Рё РёР· libs).
+Р—Р°РїСѓСЃС‚РёС‚СЊ Main.java : Run > as Java Application (РњРѕР¶РЅРѕ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РІС‹РїРѕР»РЅРµРЅРёРµ Р·СЂР°Р·Сѓ РїРѕСЃР»Рµ Р·Р°РїСѓСЃРєР°).
 
-Компиляция в Eclipse: 
+РљРѕРјРїРёР»СЏС†РёСЏ РІ Eclipse: 
 File > Export > Java > Runnable JAR > 
-выбрать Launch Configuration: Main-Parallels_Test_Task;
-задать Export Destination (Например, C:\Parallels_Test_Task\test.jar); 
-выбрать Library handling: Copy required libraries into a sub-folder next to the generated JAR;
+РІС‹Р±СЂР°С‚СЊ Launch Configuration: Main-Parallels_Test_Task;
+Р·Р°РґР°С‚СЊ Export Destination (РќР°РїСЂРёРјРµСЂ, C:\Parallels_Test_Task\test.jar); 
+РІС‹Р±СЂР°С‚СЊ Library handling: Copy required libraries into a sub-folder next to the generated JAR;
 
-Скопировать папки data и config из исходников в папку Export Destination.
-В файле data\global_config.properties задать браузер (ff, gc, ie).
-Скопировать файл run.bat в папку Export Destination.
-В файле run.bat установить актуальный путь к скомпилированному JAR.
+РЎРєРѕРїРёСЂРѕРІР°С‚СЊ РїР°РїРєРё data Рё config РёР· РёСЃС…РѕРґРЅРёРєРѕРІ РІ РїР°РїРєСѓ Export Destination.
+Р’ С„Р°Р№Р»Рµ data\global_config.properties Р·Р°РґР°С‚СЊ Р±СЂР°СѓР·РµСЂ (ff, gc, ie).
+РЎРєРѕРїРёСЂРѕРІР°С‚СЊ С„Р°Р№Р» run.bat РІ РїР°РїРєСѓ Export Destination.
+Р’ С„Р°Р№Р»Рµ run.bat СѓСЃС‚Р°РЅРѕРІРёС‚СЊ Р°РєС‚СѓР°Р»СЊРЅС‹Р№ РїСѓС‚СЊ Рє СЃРєРѕРјРїРёР»РёСЂРѕРІР°РЅРЅРѕРјСѓ JAR.
 
-Запуск:
-Двойным кликом на run.bat. 
-Из Eclipse: проект - Run as TestNG test. 
+Р—Р°РїСѓСЃРє:
+Р”РІРѕР№РЅС‹Рј РєР»РёРєРѕРј РЅР° run.bat. 
+РР· Eclipse: РїСЂРѕРµРєС‚ - Run as TestNG test. 
 
-Замечание: 
-При ассертах могут быть паузы ожидания (20 сек).
+Р—Р°РјРµС‡Р°РЅРёРµ: 
+РџСЂРё Р°СЃСЃРµСЂС‚Р°С… РјРѕРіСѓС‚ Р±С‹С‚СЊ РїР°СѓР·С‹ РѕР¶РёРґР°РЅРёСЏ (20 СЃРµРє).
 
 Enjoy!
